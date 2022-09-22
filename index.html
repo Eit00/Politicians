@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Политиканы</title>
+        <meta name="description" content="Панель с информацией для игры Политиканы.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="left_panel">
+            <a href="rules.html"><img class="logo" src="images/logo_text.png"></a>
+            <div class="country_panel">
+                <div class="russia_title">Россия</div>
+                <div class="country_bar">
+                    <ul>
+                        <li class="city_index">
+                            <p>Москва</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Санкт-Петербург</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Новосибирск</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Владивосток</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="country_panel">
+                <div class="germany_title">Германия</div>
+                <div class="country_bar">
+                    <ul>
+                        <li class="city_index">
+                            <p>Берлин</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Мюнхен</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Гамбург</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Франкфурт</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="country_panel">
+                <div class="usa_title">США</div>
+                <div class="country_bar">
+                    <ul>
+                        <li class="city_index">
+                            <p>Нью-Йорк</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Лос-Анджелес</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Чикаго</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Сан-Франциско</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="country_panel">
+                <div class="china_title">Китай</div>
+                <div class="country_bar">
+                    <ul>
+                        <li class="city_index">
+                            <p>Пекин</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Шанхай</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Гуанчжоу</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Гонконг</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="country_panel">
+                <div class="korea_title">КНДР</div>
+                <div class="country_bar">
+                    <ul>
+                        <li class="city_index">
+                            <p>Пхеньян</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Кэсон</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Расон</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                        <li class="city_index">
+                            <p>Пусан</p>
+                            <p class="percentage">54%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="right_panel">
+            <h2><div class="round">1 Раунд</div></h2>
+            <div class="ecology_panel">
+                <p class="chart_label">Уровень экологии в мире</p>
+                <p class="ecology_percentage">80%</p>
+                <canvas id="EcologyChart" style="width:80%;max-width:700px"></canvas>
+            </div>
+            <div class="economy_panel">
+                <p class="chart_label">Уровень экономики в государствах</p>
+                <canvas id="EconomyChart" style="width:80%;max-width:700px"></canvas>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script>
+            var xValues = [1,2,3,4];
+            var yValues = [80,0,0,0];
+
+            new Chart("EcologyChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  fill: false,
+                  pointRadius: 1,
+                  borderColor: "rgba(255,0,0,0.5)",
+                  data: yValues
+                }]
+              },    
+              options: {
+                legend: {display: false},
+                title: {
+                  display: false,
+                  text: "Economy level in countries",
+                  fontSize: 16
+                }
+              }
+            });
+            var xValues = ["Россия", "Германия", "США", "Китай", "КНДР"];
+            var EconomyValues = [0,0,0,0,0];
+            var barColors = ["#A90000", "green","#95A900","#0500A9","gray"];
+            var russia1=54,russia2=54,russia3=54,russia4=54,russia5=54,germany1=54,germany2=54,germany3=54,germany4=54,germany5=54,usa1=54,usa2=54,usa3=54,usa4=54,usa5=54,china1=54,china2=54,china3=54,china4=54,china5=54,korea1=54,korea2=54,korea3=54,korea4=54,korea5=54;
+            EconomyValues[0]=(russia1+russia2+russia3+russia4+russia5)/5;
+            EconomyValues[1]=(germany1+germany2+germany3+germany4+germany5)/5;
+            EconomyValues[2]=(usa1+usa2+usa3+usa4+usa5)/5;
+            EconomyValues[3]=(china1+china2+china3+china4+china5)/5;
+            EconomyValues[4]=(korea1+korea2+korea3+korea4+korea5)/5;
+            new Chart("EconomyChart", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: EconomyValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: false,
+                  text: "Ecology level in the world"
+                }
+              }
+            });
+        </script>
+    </body>
+</html>

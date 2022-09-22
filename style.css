@@ -1,0 +1,297 @@
+*  {
+  font-family: "Bookman Old Style", Georgia, serif;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#2E2E2E;
+    color: white;
+}
+.left_panel{
+    float:left;
+    width:40%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left:5%;
+    margin-top:2%;
+}
+.right_panel{
+    float:right;
+    width:45%;
+    padding-right:5%;
+    margin-top:2%;
+    margin-left:5%;
+    font-weight: bold;
+}
+p{
+    margin:0;
+    padding:0;  
+}
+.logo{
+    margin-left:80px;
+}
+.country_panel{
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      border-radius: 15px;
+      text-align:center;
+      margin-top:15px;
+}
+.russia_title{
+    background-image: linear-gradient(#A90000, #3B3B3B);
+    border-radius: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+.germany_title{
+    background-image: linear-gradient(green, #3B3B3B);
+    border-radius: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+.usa_title{
+    background-image: linear-gradient(#95A900, #3B3B3B);
+    border-radius: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+.china_title{
+    background-image: linear-gradient(#0500A9, #3B3B3B);
+    border-radius: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+.korea_title{
+    background-image: linear-gradient(gray, #3B3B3B);
+    border-radius: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+.percentage{
+    color:#A4A4A4;
+}
+.country_bar{
+    height:55px;
+}
+.country_bar ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+}
+.country_bar li{
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.city_index{
+    position:relative;
+    width:25%;
+}
+.ecology_panel{
+      padding:15px;
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      border-radius: 10px;
+      margin-top:30px;
+      width:650px;
+}
+.economy_panel{
+      padding:15px;
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      border-radius: 10px;
+      margin-top:30px;
+      width:650px;
+}
+.round{
+      border-style: solid;
+      border-color: gray;
+      border-width: 2px;
+      border-radius: 7px;
+      width:150px;
+      height: 50px;
+      line-height: 50px;
+      text-align:center;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+.chart_label{
+    font-size:25px;
+    float:left;
+}
+.ecology_percentage{
+    float:right;
+      border-style: solid;
+      border-color: red;
+      border-width: 2px;
+      border-radius: 25px;
+      width:50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color:red;
+}
+@media screen and (max-width: 992px) {
+    .left_panel{
+        width:90%;
+        text-align:center;
+        margin:0;
+    }
+    .right_panel{
+        width:90%;
+        text-align:center;
+        margin:0;
+    }
+}
+.rule_index{
+    position:relative;
+    width:100%;
+}
+.mini_panel{
+    position:relative;
+    width:48%;
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      border-radius: 15px;
+      text-align:center;
+}
+.game_info{
+    height:300px;
+}
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+}
+.navbar li{
+    display: inline;
+    margin-left:30px;
+    font-size:25px;
+}
+.logo_text{
+    float:left;
+    margin-left:80px;
+}
+.navbar_list{
+    float:right;
+    margin-right:150px;
+}
+.nav_active{
+    color:yellow;
+}
+.nav_button{
+    border: 1px solid #333; /* Рамка */
+    border-radius:10px;
+    display: inline-block;
+    padding: 1px 15px; /* Поля */
+    height:70px;
+    line-height:70px;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+    background-color:gray;
+}
+.nav_button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+    color: #a00;
+   }
+header{
+    height:180px;
+    line-height: 180px;
+}
+.intro{
+    width:100%;
+    height:900px;
+}
+.intro_text{
+    text-transform: uppercase;
+    text-align:center;
+    height: 800px;
+    padding-top:250px;
+}
+.intro_text h1{
+    font-size:60px;
+}
+.intro_text h2{
+    font-size:45px;
+}
+.intro_text a{
+    border: 1px solid #333; /* Рамка */
+    border-radius:10px;
+    display: inline-block;
+    padding: 1px 15px; /* Поля */
+    height:70px;
+    line-height:70px;
+    width:250px;
+    font-size:30px;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+    background-color:gray;    
+}
+.intro-media{
+    height:150px;
+    line-height:150px;
+}
+.nav:hover{
+    text-decoration-line:underline;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.social-icons a {
+  position: relative;
+  background-color: #eee;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+}
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.social-icons .social-icon-twitter::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-fb::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-vk::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-telegram::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-youtube::before {
+  background-image: url("...");
+}
